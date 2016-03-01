@@ -18,10 +18,6 @@ function logger(configuration) {
                 writer.write(message);
             }
         );
-        //redisClient.on('disconnect', function (err, msg) {
-        //    console.log(err);
-        //    //console.log(msg);
-        //});
         redisClient.subscribe(redisChannel);
     };
 
