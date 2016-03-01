@@ -1,0 +1,46 @@
+{
+  "database": {
+    "host": "192.168.20.143",
+    "name": "logSheet"
+  },
+  "token": {
+    "logPath": "./log/TokenLog.txt",
+    "host": "127.0.0.1",
+    "port": "3000",
+    "heartbeat": {
+      "sendInterval": "10000",
+      "timeOutInterval": "30000"
+    },
+    "log": {
+      "filePath": "./log/TokenLog.txt",
+      "redisChannel": "token_log"
+    }
+  },
+  "SLS": {
+    "logPath": "./log/SLSLog.txt",
+    "IP": "127.0.0.1",
+    "port": "2000"
+  },
+  "upgrade": {
+    "newVersion": "2.0.13",
+    "path": ""
+  },
+  "redis": {
+    "nodes": [
+      {
+        "address": "127.0.0.1",
+        "port": "6379"
+      },
+      {
+        "address": "127.0.0.1",
+        "port": "6378"
+      }
+    ]
+  },
+  "logWriters": [
+    {
+      "filePath": "./log/TokenLog.txt",
+      "redisChannel": "token_log"
+    }
+  ]
+}
